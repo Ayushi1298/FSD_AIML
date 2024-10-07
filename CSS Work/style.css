@@ -1,0 +1,67 @@
+body{
+    background-color:aqua;
+}
+/* div{
+    background-color: white;
+} */
+.container{
+    background-color: yellow;
+    height: 300px;
+    border:2px solid brown; 
+    /* margin:100px 50px 20px 10px; */
+    /* margin:top , right,bottom,left (clockwise)*/
+    padding: 20px;
+    box-sizing:border-box;
+    display:flex;
+    /* display:inline-block; */
+    flex-wrap:wrap;
+    
+}
+.child1,.child2,.child3,.child4{
+    background-color: red;
+    height:100px;
+    width:150px;
+    border:2px dotted goldenrod;
+    
+   
+    margin:20px;
+    /* margin:100px;
+    color:#ffffff;
+    padding:100px;
+    border-radius: 50%; */
+}
+.child1{
+    background-color:aquamarine;
+}
+.child2{
+   
+    background-color:antiquewhite
+}
+.child3{
+ 
+    background-color:blanchedalmond;
+}
+.child4{
+
+    background-color:blueviolet;
+}
+/* > means properties will be applied only when p is the direct descendent of div */
+/*  > indicates descendent */
+/* div>p{
+    background-color:green;
+    color:white;
+}
+/* + indicates sibling */
+/* div+p{
+    background-color:rgb(128, 0, 111);
+    color:white;
+}  */
+/* css specificity */
+/* #child1{
+    background-color:red;
+
+}
+.myclass{
+    background-color:rgb(255, 153, 0);
+    
+} */
