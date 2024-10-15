@@ -12,14 +12,18 @@ body{
     /* margin:top , right,bottom,left (clockwise)*/
     padding: 20px;
     box-sizing:border-box;
-    display:flex;
+    display:flex; 
+    /* By default flex-direction is row */
+    /* flex-direction:column-reverse; */
     /* display:inline-block; */
-    flex-wrap:wrap;
+    /* By default flex has nowrap */
+    /* flex-wrap:wrap; */
+    justify-content:space-evenly;
     
 }
 .child1,.child2,.child3,.child4{
     background-color: red;
-    height:100px;
+    height:200px;
     width:150px;
     border:2px dotted goldenrod;
     
@@ -32,13 +36,14 @@ body{
 }
 .child1{
     background-color:aquamarine;
+   
 }
 .child2{
    
     background-color:antiquewhite
 }
 .child3{
- 
+    flex-basis:50%;
     background-color:blanchedalmond;
 }
 .child4{
