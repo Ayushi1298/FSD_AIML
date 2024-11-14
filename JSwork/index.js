@@ -63,15 +63,26 @@ console.log(h1);
 div[0].appendChild(h1);
 const img=document.createElement('img');
 img.src='../Images/place.jpg';
-
 img.setAttribute("height","200");
 console.log(img);
 div[0].appendChild(img);
 */
-
+// promises: accept,reject and pending state
+/*
 const disp=document.getElementById("disp");
 console.dir(disp);
 function getData(){
     console.log("Hello");
     disp.innerHTML="<h2>Hello You have called> </h2>"
 }
+*/
+const promise = new Promise((resolve, reject) => {
+    let a = 12;
+    if (a > 10) {
+      resolve({name:"Resolve",branch:"AIML-CSE"});
+    } else {
+      reject("rejected");
+    }
+  });
+
+  promise.then((msg) => console.log(msg)).catch((msg) => console.log(msg));
